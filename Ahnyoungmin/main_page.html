@@ -1,77 +1,68 @@
 <!DOCTYPE html>
 <html lang = "ko">
 <head>
+    <!--부트스트랩-->
+    <script
+    src="http://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Welcome!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+
+    <!--Personal css style and js file-->
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css">
     <script src="main.js"></script>
 
-    <style>
-        #jb-container {
-          
-          width: 940px;
-          margin: 0px auto;
-          padding: 20px;
-          border: 1px solid #bcbcbc;
-        }
-
-        #jb-header {
-          /*여기 안에다 오른쪽에는 메뉴바 추가. 왼쪽에는 로그인 버튼 추가
-          로그인 버튼은 강의 들으면서 만든 웹페이지 조금 수정해서 만든 로그인 페이지로 넘어간다.*/
-          padding: 20px;
-          margin-bottom: 20px;
-          border: 1px solid #bcbcbc;
-        }
-
-        #jb-content {
-          /**/
-          width: 580px;
-          padding: 20px;
-          margin-bottom: 20px;
-          float: left;
-          border: 1px solid #bcbcbc;
-        }
-
-        #jb-sidebar {
-          /**/
-          width: 260px;
-          padding: 20px;
-          margin-bottom: 20px;
-          float: right;
-          border: 1px solid #bcbcbc;
-        }
-        
-        #jb-footer {
-          clear: both;
-          padding: 20px;
-          border: 1px solid #bcbcbc;
-        }
-      </style>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 --> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <h1>This is the main page.</h1>
+  <div id = "jb-container">
+    <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="home_page.html">Home</a></li>
+      <li role="presentation"><a href="team_project_page.html">Team Project</a></li>
+      <li role="presentation"><a href="storage_page.html">Storage</a></li>
+      <li role="presentation"><a href="help_page.html">Help</a></li>
+    </ul>
 
-    <div id="jb-container">
-        <div id="jb-header">
-          <h1>Header Page</h1>
-        </div>
-        <div id="jb-content">
-          <h2>Content</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean nec mollis nulla. Phasellus lacinia tempus mauris eu laoreet. Proin gravida velit dictum dui consequat malesuada. Aenean et nibh eu purus scelerisque aliquet nec non justo. Aliquam vitae aliquet ipsum. Etiam condimentum varius purus ut ultricies. Mauris id odio pretium, sollicitudin sapien eget, adipiscing risus.</p>
-        </div>
-        <div id="jb-sidebar">
-          <h2>Sidebar</h2>
-          <ul>
-            <li>Lorem</li>
-            <li>Ipsum</li>
-            <li>Dolor</li>
-          </ul>
-        </div>
-        <div id="jb-footer">
-          <p>Created by <br> Ahn,YoungMin</p>
-        </div>
+    <div id = "jb-header">
+      <!--소개 영역-->
+      <div id="jb-content">
+        <h3>A web page that would change<br> our team project more helpful</h3>
       </div>
+
+      <!--id와 pw를 적는 곳으로 이동하는 버튼?-->
+      <div id = "jb-button">
+          <button type="button" class="btn btn-primary">Log-In</button>
+      </div>
+    </div>
+
+    <div class = "jb-wrap">
+      <div class = "jb-image">
+          <img class = "opac" src = "team_project.jpg">
+          <div class = "jb-text">
+            <!--이미지 위에 이 글씨들이 뜨게 할 예정...지금은 모르겠다.-->
+              <h2>WAS</h2>
+              <ul>
+                <li>Work Together!</li>
+                <li>A Together!</li>
+                <li>Share Together!</li>
+              </ul>
+          </div>
+      </div>
+    </div>
+
+    <div id="jb-footer">
+        <p>Created by: Ahn,Youngmin</p>
+      </div>
+  </div>
 </body>
 </html>
