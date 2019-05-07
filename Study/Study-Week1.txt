@@ -1,0 +1,21 @@
+1.
+staging area: 임시저장소
+repository: 저장소
+
+working directory -> staging area(git add 파일명 or *): .git이라는 숨김 폴더에 저장 
+-> repository: git commit -m '코멘트(업그레이드 버전별로 수정된 사항에 대한 설명을 적는다)'
+-> -m의 의미: master, 최근 브랜치를 보여줌.
+
+git status: 폴더 내 파일들의 상태를 보여줌
+
+git push: 원격저장소에 파일이 올라감. 백업도 되고 수정한 최신 버전에 대한 접근을 할 수 있음.
+git log: 지금까지 변경된 사항들을 보여줌.
+
+***git =/= github
+=>git을 사용해서 만든 프로그램이 github, git으로 조작을 하고, 그 파일들을 모이는 곳이 github
+
+git remote add origin 깃허브주소
+git push origin master
+
+2. repository cloning
+git clone 깃허브주소: 해당 주소의 깃허브 레포지토리를 복제해서 가져옴.

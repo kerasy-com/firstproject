@@ -1,0 +1,44 @@
+html body{
+    margin: 0;
+    height: 2000px;
+}
+
+#head_container{
+    background-color: black;
+    text-align: center;
+    margin: 20px;
+}
+
+#profile{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#body_container{
+    background-color: #00bdaa;
+    margin: 20px;
+}
+
+.introduction{
+    color: cyan;
+    
+}
+
+#about_me{
+    color: red;
+    text-align: left;
+}
+
+#explain{
+    text-align: left;
+}
+
+#contact{
+    text-align: center;
+}
+
+#bottom_container{
+    background-color: #257aa6;
+    text-align: center;
+}

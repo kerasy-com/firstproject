@@ -1,0 +1,14 @@
+div {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+span {
+    background-color: green;
+    border: 2px solid black;
+}
+
+.inline-block {
+    display: inline-block;
+    border: 2px solid black;
+}

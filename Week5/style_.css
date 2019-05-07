@@ -1,0 +1,66 @@
+html body {
+    height: 2000px;
+}
+
+p {
+    margin: 0;
+}
+
+.boxmodel {
+    margin: 50px;
+    border: 50px solid red;
+    padding: 50px;
+}
+
+.orange-box {
+    background: orange;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    left: 100px;
+    top: 100px; /*top은 화면상 아래로 내려가는 것임*/
+}
+
+.blue-box {
+    position: relative;
+    background: blue;
+    height: 100px;
+    width: 100px;
+}
+
+.bigdiv {
+    width: 1000px;;
+    height: 400px;
+    border: 5px solid black;
+}
+
+.green-box {
+    background: green;
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    right: 0px;
+}
+
+.yellow-box {
+    background: yellow;
+    height: 100px;
+    width: 100px;
+}
+
+.pink-box {
+    left: 900px;
+    position: fixed;
+    background: pink;
+    height: 100px;
+    width: 100px;
+}
+
+.purple-box {
+    top: 0px;
+    left: 300px;
+    position: sticky;
+    width: 100px;
+    height: 100px;
+    background: purple;
+}
